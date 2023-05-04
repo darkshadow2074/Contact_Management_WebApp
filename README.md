@@ -1,4 +1,4 @@
-## Contact Management App
+# Contact Management App
 
 Contact managment webapp is basically an WebApp which basically let user to Add contact and Create acontact list for there ease. User can perform Create Contact, Edit Contact, Delete Contact. Also There is a section which shows about the Graph of Covid 19 Affected countries.
 
@@ -7,9 +7,11 @@ For Live Project Link Please Visit
 For Github Repo Link Please visit
 [project page](https://github.com/darkshadow2074/Contact_Management_WebApp).
 
-# Technologies Used
+## Technologies Used
 
-Contact Management WebApp is built using HTML, CSS, Javascript, React JS, Redux, React ChartJs
+Contact Management WebApp is built using
+
+- HTML, CSS, Javascript, React JS, Redux, React ChartJs
 
 ## Installation
 
