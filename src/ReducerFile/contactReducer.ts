@@ -1,3 +1,5 @@
+// Contact Reducer File - contactReducer function is basically used to perform operation over any action dispatched
+
 import { v4 as uuid } from "uuid";
 export interface ContactState {
   contactList: any[];
@@ -14,12 +16,14 @@ export const contactReducer = (
   action: Action
 ) => {
   switch (action.type) {
+    // For Add Contact
     case "Add_Contact": {
       return {
         ...state,
         contactList: [...state.contactList, { id: uuid(), ...action.payload }],
       };
     }
+    // For Edit Contact
     case "Edit_Contact": {
       return {
         ...state,
@@ -50,6 +54,7 @@ export const contactReducer = (
         ),
       };
     }
+    // For Delete Contact
     case "Delete_Contact": {
       return {
         ...state,

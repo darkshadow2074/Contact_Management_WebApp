@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Provider store={store}>
+        {/* Wrappping App Component inside Redux store  */}
         <App />
       </Provider>
     </Router>
