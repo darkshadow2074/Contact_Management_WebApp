@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { uuid } from "uuidv4";
+import { v4 as uuid } from "uuid";
 
 import { AddNewContactInput } from "../components/AddNewContactInput";
 import { ContactState } from "../ReducerFile/contactReducer";

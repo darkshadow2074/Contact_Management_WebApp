@@ -22,6 +22,7 @@ export const AddNewContactInput: FC<NewContactDetailInputProps> = ({
     setInput((prevInput) => ({ ...prevInput, status: val }));
 
   const handleSaveContact = () => {
+    console.log("ji");
     addContactHandler(input);
     type === "another-contact" && handleToggleAnotherClick();
     setInput({
