@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { v4 as uuid_v4 } from "uuid";
+import { uuid } from "uuidv4";
 
 import { AddNewContactInput } from "../components/AddNewContactInput";
 import { ContactState } from "../ReducerFile/contactReducer";
@@ -27,7 +27,7 @@ export const ContactBookPage = () => {
           <div className="contact-card">
             {contactList.map((ele) => (
               <ContactCard
-                key={uuid_v4()}
+                key={uuid()}
                 {...ele}
                 deleteContactFunction={deleteContactFunction}
               />

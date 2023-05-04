@@ -2,7 +2,7 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 export const ContactManagementHeader = () => {
-  const applyActiveStle = ({ isActive }) => ({
+  const applyActiveStle = ({ isActive }: any) => ({
     color: isActive ? "red" : "black",
     textDecoration: "none",
     fontSize: "18px",

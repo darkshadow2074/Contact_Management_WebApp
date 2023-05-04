@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 interface CountryData {
   countriesData: any;
 }
@@ -9,7 +9,7 @@ export const Map: FC<CountryData> = ({ countriesData }) => {
   console.log(countriesData);
   return (
     <div style={{ position: "relative", height: "100vh", width: "100%" }}>
-      <MapContainer center={[61.505, -0.09]} zoom={3} scrollWheelZoom={false}>
+      {/* <MapContainer center={[61.505, -0.09]} zoom={3} scrollWheelZoom={false}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         {countriesData.map((country: any) => (
           <Marker
@@ -26,7 +26,7 @@ export const Map: FC<CountryData> = ({ countriesData }) => {
             </Popup>
           </Marker>
         ))}
-      </MapContainer>
+      </MapContainer> */}
     </div>
   );
 };

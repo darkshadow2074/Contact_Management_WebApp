@@ -3,7 +3,6 @@ import React from "react";
 
 import { useState, useEffect } from "react";
 import { LineGraphComponent } from "./LineGraphComponent";
-import { Map } from "./Map";
 export const Dashboard = () => {
   const [countriesData, setCountriesData] = useState([]);
   const getMeData = async (url: string) => {
@@ -23,7 +22,6 @@ export const Dashboard = () => {
     <div className="Dashboard-container">
       <h1 className="heading">Dashboard for Covid-19</h1>
       <LineGraphComponent countriesData={countriesData} />
-      {/* <Map countriesData={countriesData} /> */}
     </div>
   );
 };

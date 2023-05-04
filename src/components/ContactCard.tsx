@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, useState } from "react";
+import React, { FC, useState } from "react";
 import { EditExistingContactInput } from "./EditExistingContactInput";
 
 interface DataProps {
